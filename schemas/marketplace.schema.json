@@ -26,7 +26,7 @@
         "author": { "type": "string" },
         "category": {
           "type": "string",
-          "enum": ["productivity", "coding", "design", "devops", "testing", "ai", "utility"]
+          "enum": ["productivity", "coding", "design", "devops", "testing", "ai", "utility", "developer-tools"]
         },
         "tags": { "type": "array", "items": { "type": "string" } },
         "path": { "type": "string" },
