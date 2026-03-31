@@ -1,0 +1,82 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Plugin Manifest",
+  "type": "object",
+  "required": ["id", "name", "version", "description", "author", "category", "skills"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "name": { "type": "string" },
+    "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+    "description": { "type": "string" },
+    "author": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": ["productivity", "coding", "design", "devops", "testing", "ai", "utility"]
+    },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "homepage": { "type": "string", "format": "uri" },
+    "repository": { "type": "string", "format": "uri" },
+    "license": { "type": "string" },
+    "publishedAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "claudeCodeVersion": { "type": "string", "description": "Minimum Claude Code version required" },
+    "skills": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/Skill" }
+    },
+    "mcpServers": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/definitions/McpServer" }
+    },
+    "hooks": {
+      "type": "object",
+      "properties": {
+        "PreToolUse":  { "type": "array", "items": { "$ref": "#/definitions/Hook" } },
+        "PostToolUse": { "type": "array", "items": { "$ref": "#/definitions/Hook" } },
+        "Notification": { "type": "array", "items": { "$ref": "#/definitions/Hook" } },
+        "Stop":        { "type": "array", "items": { "$ref": "#/definitions/Hook" } }
+      }
+    }
+  },
+  "definitions": {
+    "Skill": {
+      "type": "object",
+      "required": ["name", "description", "prompt"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "prompt": { "type": "string", "description": "Path to the .md prompt file" },
+        "trigger": { "type": "string", "description": "Natural language trigger description" }
+      }
+    },
+    "McpServer": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "type": "string", "enum": ["stdio", "sse"] },
+        "command": { "type": "string" },
+        "args": { "type": "array", "items": { "type": "string" } },
+        "env": { "type": "object", "additionalProperties": { "type": "string" } },
+        "url": { "type": "string" }
+      }
+    },
+    "Hook": {
+      "type": "object",
+      "required": ["matcher", "hooks"],
+      "properties": {
+        "matcher": { "type": "string" },
+        "hooks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "command"],
+            "properties": {
+              "type": { "type": "string", "enum": ["command"] },
+              "command": { "type": "string" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

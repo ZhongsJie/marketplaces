@@ -1,0 +1,22 @@
+{
+  "$schema": "../../schemas/plugin.schema.json",
+  "id": "github-analyzer",
+  "name": "GitHub Analyzer",
+  "version": "1.0.0",
+  "description": "Analyze GitHub repository issues and pull requests",
+  "author": "User",
+  "category": "developer-tools",
+  "tags": ["github", "issues", "pull-requests", "analysis"],
+  "license": "MIT",
+  "publishedAt": "2026-03-20T00:00:00Z",
+  "updatedAt": "2026-03-20T00:00:00Z",
+  "claudeCodeVersion": "1.0.0",
+  "skills": [
+    {
+      "name": "github-analyzer",
+      "description": "Analyze GitHub repository issues and pull requests",
+      "prompt": "skills/github-analyzer.md",
+      "trigger": "TRIGGER when: user wants to analyze GitHub issues, PRs, or repository activity. Examples: summarize issues, list open PRs, find stale issues, analyze PR changes, code review. DO NOT TRIGGER when: unrelated to GitHub analysis."
+    }
+  ]
+}
