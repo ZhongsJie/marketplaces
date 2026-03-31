@@ -1,0 +1,7 @@
+{
+  "name": "triton-kernel-analyzer",
+  "description": "Analyze and optimize Triton GPU kernel performance. Profile kernel execution, identify bottlenecks, and suggest optimizations.",
+  "author": {
+    "name": "ZhongsJie"
+  }
+}

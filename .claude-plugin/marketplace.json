@@ -1,0 +1,31 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "atomage-marketplace",
+  "description": "Atomage marketplace for Claude Code plugins and skills",
+  "owner": {
+    "name": "ZhongsJie",
+    "email": "zhongsjie@example.com"
+  },
+  "plugins": [
+    {
+      "name": "github-analyzer",
+      "description": "Analyze GitHub repository issues and pull requests",
+      "category": "development",
+      "author": {
+        "name": "ZhongsJie"
+      },
+      "source": "./plugins/github-analyzer",
+      "homepage": "https://github.com/ZhongsJie/marketplaces"
+    },
+    {
+      "name": "triton-kernel-analyzer",
+      "description": "Analyze and optimize Triton GPU kernel performance",
+      "category": "development",
+      "author": {
+        "name": "ZhongsJie"
+      },
+      "source": "./plugins/triton-kernel-analyzer",
+      "homepage": "https://github.com/ZhongsJie/marketplaces"
+    }
+  ]
+}

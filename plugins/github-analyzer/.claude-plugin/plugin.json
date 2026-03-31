@@ -1,0 +1,7 @@
+{
+  "name": "github-analyzer",
+  "description": "Analyze GitHub repository issues and pull requests. Summarize issues, list open PRs, find stale issues, analyze PR changes, and perform code reviews.",
+  "author": {
+    "name": "ZhongsJie"
+  }
+}
