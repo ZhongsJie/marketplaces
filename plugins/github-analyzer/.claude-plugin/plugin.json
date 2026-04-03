@@ -1,7 +1,16 @@
 {
-  "name": "github-analyzer",
+  "id": "github-analyzer",
+  "name": "GitHub Analyzer",
+  "version": "1.0.0",
   "description": "Analyze GitHub repository issues and pull requests. Summarize issues, list open PRs, find stale issues, analyze PR changes, and perform code reviews.",
-  "author": {
-    "name": "ZhongsJie"
-  }
+  "author": "ZhongsJie",
+  "category": "utility",
+  "tags": ["github", "analysis", "pr", "issues"],
+  "skills": [
+    {
+      "name": "github_analyzer",
+      "description": "Analyze GitHub repository issues and PRs. Use when working with GitHub data, issue analysis, PR reviews, or repository activity.",
+      "prompt": "skills/github-analyzer.md"
+    }
+  ]
 }

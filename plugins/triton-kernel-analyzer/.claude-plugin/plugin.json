@@ -1,7 +1,16 @@
 {
-  "name": "triton-kernel-analyzer",
+  "id": "triton-kernel-analyzer",
+  "name": "Triton Kernel Analyzer",
+  "version": "1.0.0",
   "description": "Analyze and optimize Triton GPU kernel performance. Profile kernel execution, identify bottlenecks, and suggest optimizations.",
-  "author": {
-    "name": "ZhongsJie"
-  }
+  "author": "ZhongsJie",
+  "category": "coding",
+  "tags": ["triton", "gpu", "kernel", "performance", "cuda"],
+  "skills": [
+    {
+      "name": "triton_kernel_analyzer",
+      "description": "Analyze and optimize Triton GPU kernels. Use when working with Triton kernel performance, CUDA optimization, or GPU profiling.",
+      "prompt": "skills/triton-kernel-analyzer.md"
+    }
+  ]
 }

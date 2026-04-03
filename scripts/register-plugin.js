@@ -16,7 +16,7 @@ if (!pluginDir) {
   process.exit(1);
 }
 
-const manifestPath = join(root, pluginDir, 'plugin.json');
+const manifestPath = join(root, pluginDir, '.claude-plugin', 'plugin.json');
 let manifest;
 try {
   manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));

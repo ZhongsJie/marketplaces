@@ -1,0 +1,65 @@
+{
+  "schema_version": "v1",
+  "plugins": [
+    {
+      "id": "github-analyzer",
+      "name": "GitHub Analyzer",
+      "version": "1.0.0",
+      "description": "Analyze GitHub repository issues and pull requests. Summarize issues, list open PRs, find stale issues, analyze PR changes, and perform code reviews.",
+      "author": "ZhongsJie",
+      "category": "utility",
+      "tags": [
+        "github",
+        "analysis",
+        "pr",
+        "issues"
+      ],
+      "path": "plugins/github-analyzer",
+      "license": "MIT",
+      "publishedAt": "2026-03-31T15:30:00.889Z",
+      "updatedAt": "2026-03-31T15:30:00.890Z",
+      "downloads": 0
+    },
+    {
+      "id": "triton-kernel-analyzer",
+      "name": "Triton Kernel Analyzer",
+      "version": "1.0.0",
+      "description": "Analyze and optimize Triton GPU kernel performance. Profile kernel execution, identify bottlenecks, and suggest optimizations.",
+      "author": "ZhongsJie",
+      "category": "coding",
+      "tags": [
+        "triton",
+        "gpu",
+        "kernel",
+        "performance",
+        "cuda"
+      ],
+      "path": "plugins/triton-kernel-analyzer",
+      "license": "MIT",
+      "publishedAt": "2026-03-31T15:30:00.968Z",
+      "updatedAt": "2026-03-31T15:30:00.969Z",
+      "downloads": 0
+    },
+    {
+      "id": "vllm-perf-opt",
+      "name": "vLLM Performance Optimization",
+      "version": "1.0.0",
+      "description": "Analyze and optimize vLLM inference performance. Identify optimization opportunities including tensor operations, caching, device memory transfers, batching, kernel tuning, and conditional work skipping. Based on real-world optimizations from vLLM contributors.",
+      "author": "ZhongsJie",
+      "category": "coding",
+      "tags": [
+        "vllm",
+        "performance",
+        "optimization",
+        "llm",
+        "inference"
+      ],
+      "path": "plugins/vllm-perf-opt",
+      "license": "MIT",
+      "publishedAt": "2026-03-31T15:28:58.205Z",
+      "updatedAt": "2026-03-31T15:28:58.206Z",
+      "downloads": 0
+    }
+  ],
+  "updatedAt": "2026-03-31T15:30:00.970Z"
+}

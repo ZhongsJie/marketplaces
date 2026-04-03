@@ -1,0 +1,16 @@
+{
+  "id": "vllm-perf-opt",
+  "name": "vLLM Performance Optimization",
+  "version": "1.0.0",
+  "description": "Analyze and optimize vLLM inference performance. Identify optimization opportunities including tensor operations, caching, device memory transfers, batching, kernel tuning, and conditional work skipping. Based on real-world optimizations from vLLM contributors.",
+  "author": "ZhongsJie",
+  "category": "coding",
+  "tags": ["vllm", "performance", "optimization", "llm", "inference"],
+  "skills": [
+    {
+      "name": "vllm_perf",
+      "description": "Analyze and optimize vLLM performance. Use when working with vLLM inference optimization, performance profiling, throughput/latency improvements, tensor operations, kernel tuning, or any vLLM-related performance work.",
+      "prompt": "skills/vllm_perf.md"
+    }
+  ]
+}
